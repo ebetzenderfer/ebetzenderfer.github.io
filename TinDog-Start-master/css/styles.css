@@ -1,44 +1,23 @@
 
 body {
   font-family: Montserrat, sans-serif;
-
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-h2 {
-  font-weight: bolder;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-weight: bolder;
-  font-size: 1.5rem;
-}
-
 p {
   color: #8f8f8f;
 }
 
+/* Navigation attributes */
+
 .navbar-collapse {
   text-align: right;
 }
-/* Title section */
 
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-
-}
-
-.container-fluid {
-  padding: 3% 15% 7%;
-}
-
-/* Navigation attributes */
 .nav-item {
   padding: 0 18px;
 }
@@ -58,8 +37,31 @@ p {
     padding:0 0 4.5rem;
 }
 
-.dwnloadBtn {
-  margin: 5% 3% 5% 0;
+
+/* containers */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* Title section */
+#title {
+
+  text-align: left;
+
+}
+
+#title .container-fluid {
+  padding: 3% 15%;
 }
 
 .titleImage {
@@ -68,6 +70,15 @@ p {
   right: 30%;
 }
 
+
+
+
+.dwnloadBtn {
+  margin: 5% 3% 5% 0;
+}
+
+
+
 /* rotating an image, just replace the 20 with the degree you want to rotate */
 .rotated {
     transform: rotate(25deg);
@@ -75,15 +86,14 @@ p {
 
 /* features section */
 #features {
-  background-color: #fff;
-  padding: 7% 15%;
+
   position: relative;
   z-index: 1;
 }
 
 .featuresBox {
     padding-top: 5%;
-    text-align: center;
+
 
 }
 
@@ -96,16 +106,21 @@ p {
   color: #FF4C68;
 }
 
+.feature-title {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
 
 /* testimonials section */
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
 }
 
-.carousel-item {
-  padding: 7% 15%;
+.testimonial-text {
+  font-weight: bolder;
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 .testimonial-image {
@@ -118,7 +133,6 @@ margin: 20px;
 /* press section */
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -131,7 +145,7 @@ margin: 20px;
 /* Pricing section */
 #pricing {
   padding: 100px;
-  text-align: center;
+
 }
 
 .pricing-column {
@@ -143,34 +157,16 @@ margin: 20px;
   line-height: 1.5;
 }
 
-/* cta section */
-#cta {
-  background-color: #ff4c68;
-  color: #fff;
-  padding: 7% 12%;
-  text-align: center;
-}
-
-.cta-heading {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
 
 /* footer section */
 #footer {
   background-color: #fff;
-  text-align: center;
-  padding: 7% 15%;
 }
 
 .social-icon {
   margin: 20px 10px;
 }
 
-.footer-container {
-  text-align: center;
-}
 
 
 /*headings*/
@@ -179,8 +175,11 @@ margin: 20px;
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight:900;
+}
 
-
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 /*media query, if the screen is smaller than 990px the image will un-rotate*/
@@ -188,7 +187,6 @@ margin: 20px;
   #title {
     text-align: center;
   }
-
   .titleImage {
     position: static;
     transform: rotate(0);
